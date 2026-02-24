@@ -1,38 +1,27 @@
 #include <stdio.h>
 
-int Addition (float numberOne, float numberTwo) {
+float Addition (float numberOne, float numberTwo) {
 
 	float sum = numberOne + numberTwo;
-	printf("%f", sum);
-	
-	return 0;
+	return sum;
 }
 
-int Subtraction (float numberOne, float numberTwo) {
+float Subtraction (float numberOne, float numberTwo) {
 
 	float difference = numberOne - numberTwo;
-	printf("%f", difference);
-
-	return 0;
-
+	return difference;
 }
 
-int Multiplikation (float numberOne, float numberTwo) {
+float Multiplikation (float numberOne, float numberTwo) {
 
 	float product = numberOne * numberTwo;
-	printf("%f", product);
-
-	return 0;
-
+	return product;
 }
 
-int Division (float numberOne, float numberTwo) {
+float Division (float numberOne, float numberTwo) {
 
 	float quotient = numberOne / numberTwo;
-	printf("%f", quotient);
-	
-	return 0;
-
+	return quotient;
 }
  
 
@@ -53,16 +42,16 @@ int main () {
 
 	switch (chooseOperator) {
 		case 1:
-			Addition(numberOne, numberTwo);
+			printf("The sum is: %f", Addition(numberOne, numberTwo));
 			break;
 		case 2:
-			Subtraction(numberOne, numberTwo);
+			printf("The difference is: %f", Subtraction(numberOne, numberTwo));
 			break;
 		case 3:
-		       	Multiplikation(numberOne, numberTwo);
+		       	printf("The product is: %f", Multiplikation(numberOne, numberTwo));
 			break;
 		case 4:
-			Division(numberOne, numberTwo);
+			printf("The quotient is; %f", Division(numberOne, numberTwo));
 			break;
 		default:
 			printf("Tung Tung Tung Sahur");
