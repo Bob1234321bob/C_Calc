@@ -5,7 +5,7 @@ int Addition (float numberOne, float numberTwo) {
 	float sum = numberOne + numberTwo;
 	printf("%f", sum);
 	
-	return 1;
+	return 0;
 }
 
 int Subtraction (float numberOne, float numberTwo) {
@@ -51,9 +51,6 @@ int main () {
 	printf("What is your second number:\n");
 	scanf("%f", &numberTwo);
 
-
-	
-
 	switch (chooseOperator) {
 		case 1:
 			Addition(numberOne, numberTwo);
@@ -68,8 +65,8 @@ int main () {
 			Division(numberOne, numberTwo);
 			break;
 		default:
-			printf("Your code does not work.");
+			printf("Tung Tung Tung Sahur");
 		}
 	
-	return 2;
+	return 0;
 }
